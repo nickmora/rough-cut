@@ -4,9 +4,9 @@ import ProjectCard from "./ProjectCard";
 import defaultProjects from "../projects.js";
 
 const Portfolio = () => {
-    const [projects, setProjects] = React.useState(defaultProjects);
+    const [projects] = React.useState(defaultProjects);
     return (
-        <Paper className = "card">
+        <Paper className="card">
             <Typography
                 variant="h2"
             >
@@ -22,20 +22,20 @@ const Portfolio = () => {
                             <Grid
                                 item
                                 sm={12}
-                                key = {project.id}
+                                key={project.id}
                             >
-                                <ProjectCard project= {project}/>
+                                <ProjectCard project={project} />
                             </Grid>
-                                )
-                            })
-                                :
-                <Typography>
-                                    Something went wrong
-                </Typography>
-                                }
+                        )
+                    })
+                    :
+                    <Typography>
+                        Something went wrong
+                    </Typography>
+                }
             </Grid>
         </Paper>
-            );
-        }
-         
+    );
+}
+
 export default Portfolio;

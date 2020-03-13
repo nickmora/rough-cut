@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, Paper } from "@material-ui/core";
+import { Typography, Paper } from "@material-ui/core";
 
 const Bio = () => {
     return (
@@ -12,7 +12,7 @@ const Bio = () => {
                 About Me
             </Typography>
             <Typography
-                variant="h5"
+                variant="body1"
                 align = "justify"
                 paragraph
             >

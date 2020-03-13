@@ -3,7 +3,7 @@ import { Avatar, Typography, Grid, IconButton, Card, CardActions } from "@materi
 import { GitHub, Mail, LinkedIn } from "@material-ui/icons";
 const Banner = () => {
     return (
-        <Card>
+        <Card className = "card">
             <Grid container justify = "center" >
                 <Avatar style = {{"width": "250px", "height": "250px", "borderWidth" : "10px", "borderColor" : "red", "borderStyle" : "solid", "margin" : "25px" }} src="#" />
             </Grid>

@@ -36,23 +36,23 @@ const ProjectCard = (props) => {
                             {props.project.date}
                         </Typography> */}
                         <Grid container spacing={2}>
-                            <Grid item sm={6}>
+                            <Grid item xs={6}>
                                 <Button
                                     variant="contained"
                                     fullWidth
                                     color="primary"
                                 >
                                     Sign Up
-                                                    </Button>
+                                </Button>
                             </Grid>
-                            <Grid item sm={6}>
+                            <Grid item xs={6}>
                                 <Button
                                     variant="contained"
                                     fullWidth
                                     color="secondary"
                                 >
                                     Volunteer
-                                                    </Button>
+                                </Button>
                             </Grid>
                         </Grid>
                     </Grid>

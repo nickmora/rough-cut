@@ -1,22 +1,29 @@
 import React from 'react';
-import './App.css';
 import Banner from './_components/Banner';
-import {Container} from "@material-ui/core";
+import { Container, ThemeProvider, CssBaseline } from "@material-ui/core";
 import Portfolio from './_components/Portfolio';
 import Bio from './_components/Bio';
 import Contact from "./_components/Contact";
 import Footer from './_components/Footer';
+import theme from "./_styles/mainTheme";
+import mainStyle from "./_styles/mainStyle";
 
 function App() {
+  const classes = mainStyle(theme);
   return (
     <div className="App">
-      <Container>
-          <Banner />
-          <Bio />
-          <Portfolio />
-          <Contact />
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <div className={classes.root}>
+          <Container>
+            <Banner />
+            <Bio />
+            <Portfolio />
+            <Contact />
+          </Container>
           <Footer />
-      </Container>
+        </div>
+      </ThemeProvider>
     </div>
   );
 }

@@ -1,68 +1,112 @@
 import React from 'react';
-import { Typography, Paper, TextField, FormGroup, FormControlLabel, Checkbox, Button } from "@material-ui/core";
+import { Typography, Paper, TextField, Button, Grid } from "@material-ui/core";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+    const [inputText, setInputText] = React.useState({first_name:"",last_name:"",phone_number:"",body:"", email: ""});
+    const handleInput = e => {
+        setInputText({...inputText, [e.target.name]:e.target.value})
+    }
+    const sendEmail = e => {
+        e.preventDefault()
+        
+        // if(!inputText.first_name || !inputText.last_name || !inputText.body || !inputText.email){
+        //     return alert("Make a modal to show people that they need to fill out other fields")
+        // }
+
+        emailjs.sendForm("gmail", "template_uASDyZfg_clone", e.target, process.env.REACT_APP_EMAILJS_USER_ID)
+            .then(result => console.log(result.text), error => console.log(error.text))
+
+    }
     return (
         <div>
-            <Paper className = "card">
+            <Paper className="card">
                 <Typography
                     variant="h2"
+                    gutterBottom
                 >
                     Get in Touch
                     </Typography>
-                <form action="submit">
-                    <div>
-                        <TextField
-                            id="name"
-                            placeholder="Name"
-                            label="Name"
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            id="email"
-                            placeholder="Email"
-                            label="Email"
-                            fullWidth
-                            type="email"
-                        />
-                    </div>
-                    <TextField
-                        id="phone-number"
-                        placeholder="Phone Number"
-                        label="Phone Number"
-                        fullWidth
-                    />
-                    <div>
-                        <TextField
-                            id="body"
-                            placeholder="Message Body"
-                            label="Message Body"
-                            multiline
-                            fullWidth
-                        />
-                    </div>
-                    <FormGroup row>
-                        <FormControlLabel
-                            control={<Checkbox />}
-                            label="Subscribe to our Newsletter"
-                        />
-                    </FormGroup>
-                    <FormGroup row>
-                        <FormControlLabel
-                            control={<Checkbox />}
-                            label="I'm interested in volunteering"
-                        />
-                    </FormGroup>
-                    <Button
-                        fullWidth
-                        variant="contained"
-                        color="primary"
-                        type="submit"
-                    >
-                        Submit
-                </Button>
+                <form onSubmit={sendEmail}>
+                    <Grid container spacing={3}>
+                        <Grid item xs = {6}>
+                            <TextField
+                                id="first_name"
+                                placeholder="First Name"
+                                label="First Name"
+                                fullWidth
+                                name="first_name"
+                                variant="outlined"
+                                required
+                                value = {inputText.first_name}
+                                onChange = {handleInput}
+                            />
+                        </Grid>
+                        <Grid item xs = {6}>
+                            <TextField
+                                id="last_name"
+                                placeholder="Last Name"
+                                label="Last Name"
+                                fullWidth
+                                name="last_name"
+                                variant="outlined"
+                                required
+                                value = {inputText.last_name}
+                                onChange = {handleInput}
+                            />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField
+                                id="email"
+                                placeholder="Email"
+                                label="Email"
+                                fullWidth
+                                type="email"
+                                name="email"
+                                variant="outlined"
+                                required
+                                value = {inputText.email}
+                                onChange = {handleInput}
+                            />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField
+                                id="phone_number"
+                                placeholder="Phone Number"
+                                label="Phone Number"
+                                fullWidth
+                                type="tel"
+                                name="phone_number"
+                                variant="outlined"
+                                value = {inputText.phone_number}
+                                onChange = {handleInput}
+                            />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField
+                                id="body"
+                                placeholder="Message Body"
+                                label="Message Body"
+                                multiline
+                                fullWidth
+                                name="body"
+                                variant="outlined"
+                                required
+                                value = {inputText.body}
+                                onChange = {handleInput}
+                            />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Button
+                                fullWidth
+                                variant="contained"
+                                color="primary"
+                                type="submit"
+                            >
+                                Submit
+                            </Button>
+                        </Grid>
+                    </Grid>
                 </form>
             </Paper>
         </div>
