@@ -1,11 +1,13 @@
 import React from 'react';
 import { Avatar, Typography, Grid, IconButton, Card, CardActions } from "@material-ui/core";
 import { GitHub, Mail, LinkedIn } from "@material-ui/icons";
+import clyff from "../images/clyffstill.jpg";
+
 const Banner = () => {
     return (
         <Card className = "card">
             <Grid container justify = "center" >
-                <Avatar style = {{"width": "250px", "height": "250px", "borderWidth" : "10px", "borderColor" : "red", "borderStyle" : "solid", "margin" : "25px" }} src="#" />
+                <Avatar style = {{"width": "350px", "height": "350px", "margin" : "25px" }} src={clyff} />
             </Grid>
             <Typography variant={"h3"} gutterBottom>
                 Nick Morales

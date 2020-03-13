@@ -7,6 +7,7 @@ import Contact from "./_components/Contact";
 import Footer from './_components/Footer';
 import theme from "./_styles/mainTheme";
 import mainStyle from "./_styles/mainStyle";
+import TechStack from "./_components/TechStack";
 
 function App() {
   const classes = mainStyle(theme);
@@ -18,6 +19,7 @@ function App() {
           <Container>
             <Banner />
             <Bio />
+            <TechStack />
             <Portfolio />
             <Contact />
           </Container>

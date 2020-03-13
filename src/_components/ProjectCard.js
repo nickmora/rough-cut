@@ -7,9 +7,14 @@ const ProjectCard = (props) => {
             <CardContent>
                 <Typography
                     variant="h3"
-                    gutterBottom
                 >
                     {props.project.title}
+                </Typography>
+                <Typography
+                    variant="subtitle2"
+                    paragraph
+                >
+                    {props.project.description}
                 </Typography>
                 <Grid container spacing={2}>
                     <Grid item sm={4}>
@@ -17,14 +22,25 @@ const ProjectCard = (props) => {
                             <img src={props.project.img} alt={props.project.altText} className="project-img" />
                         </Paper>
                     </Grid>
-                    <Grid item sm={8}>
-                        <Typography
-                            variant="body1"
-                            align="justify"
-                            paragraph
-                        >
-                            {props.project.description}
-                        </Typography>
+                    <Grid item sm={8} container spacing={2} justify="space-between" direction="column">
+                        <Grid item>
+                            <Typography
+                                variant="h6"
+                                align="center"
+                                gutterBottom
+                            >
+                                Techs Used:
+                                    {props.project.techs.map(tech => {
+                                        return (
+                                            <Typography
+                                                align = "left"
+                                            >
+                                                {tech}
+                                            </Typography>
+                                        )
+                                    })}
+                            </Typography>
+                        </Grid>
                         {/* 
                         ---DATE FORMAT---
                         
@@ -35,23 +51,26 @@ const ProjectCard = (props) => {
                         >
                             {props.project.date}
                         </Typography> */}
-                        <Grid container spacing={2}>
-                            <Grid item xs={6}>
+                        <Grid item container spacing={2} direction="row" alignItems = "center">
+                            <Grid item sm={6}
+                            >
                                 <Button
                                     variant="contained"
                                     fullWidth
                                     color="primary"
+                                    onClick = {()=>window.open(props.project.git, "_blank")}
                                 >
-                                    Sign Up
+                                    GitHub Repo!
                                 </Button>
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item sm={6}>
                                 <Button
                                     variant="contained"
                                     fullWidth
                                     color="secondary"
+                                    onClick = {()=>window.open(props.project.deployed, "_blank")}
                                 >
-                                    Volunteer
+                                    Deployed Site
                                 </Button>
                             </Grid>
                         </Grid>

@@ -14,6 +14,13 @@ const useStyles = makeStyles(theme => ({
     Footer: {
         backgroundColor: theme.palette.secondary.dark,
         color: theme.palette.getContrastText(theme.palette.secondary.dark)
+    },
+    TechStack:{
+        "& img":{
+            height: "50px",
+            maxWidth: 100,
+            margin: theme.spacing(1)
+        }
     }
 }))
 
