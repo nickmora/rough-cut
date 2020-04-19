@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/rough-cut/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/rough-cut/static/js/main.2b5f39b1.chunk.js",
+    "main.js.map": "/rough-cut/static/js/main.2b5f39b1.chunk.js.map",
+    "runtime-main.js": "/rough-cut/static/js/runtime-main.63c829e3.js",
+    "runtime-main.js.map": "/rough-cut/static/js/runtime-main.63c829e3.js.map",
+    "static/js/2.45bbf924.chunk.js": "/rough-cut/static/js/2.45bbf924.chunk.js",
+    "static/js/2.45bbf924.chunk.js.map": "/rough-cut/static/js/2.45bbf924.chunk.js.map",
+    "index.html": "/rough-cut/index.html",
+    "precache-manifest.6addc29172c9b54bef4439b914248e6d.js": "/rough-cut/precache-manifest.6addc29172c9b54bef4439b914248e6d.js",
+    "service-worker.js": "/rough-cut/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/rough-cut/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.45bbf924.chunk.js.LICENSE.txt": "/rough-cut/static/js/2.45bbf924.chunk.js.LICENSE.txt",
+    "static/media/bootstrap.svg": "/rough-cut/static/media/bootstrap.67cb4bac.svg",
+    "static/media/clyffstill.jpg": "/rough-cut/static/media/clyffstill.628a53b0.jpg",
+    "static/media/css3.svg": "/rough-cut/static/media/css3.0a9363e0.svg",
+    "static/media/express.svg": "/rough-cut/static/media/express.9240c272.svg",
+    "static/media/html5.svg": "/rough-cut/static/media/html5.676e8188.svg",
+    "static/media/javascript.svg": "/rough-cut/static/media/javascript.61ed8b05.svg",
+    "static/media/jobscrybe.jpeg": "/rough-cut/static/media/jobscrybe.6828c3cd.jpeg",
+    "static/media/materialUI.svg": "/rough-cut/static/media/materialUI.cd849ab9.svg",
+    "static/media/mongodb.svg": "/rough-cut/static/media/mongodb.80e39c1e.svg",
+    "static/media/mysql.svg": "/rough-cut/static/media/mysql.f80a91ba.svg",
+    "static/media/node.svg": "/rough-cut/static/media/node.a745dcd5.svg",
+    "static/media/nytScrape.jpeg": "/rough-cut/static/media/nytScrape.a56247da.jpeg",
+    "static/media/pawstagram.png": "/rough-cut/static/media/pawstagram.a8e499db.png",
+    "static/media/react.svg": "/rough-cut/static/media/react.e20af11e.svg",
+    "static/media/redux.svg": "/rough-cut/static/media/redux.bcee418f.svg",
+    "static/media/todolist.png": "/rough-cut/static/media/todolist.eab8b4b0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.63c829e3.js",
+    "static/js/2.45bbf924.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.2b5f39b1.chunk.js"
+  ]
+}
