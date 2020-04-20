@@ -2,7 +2,7 @@
   "name": "rough-cut",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nickmora.github.io/rough-cut",
+  "homepage": "https://nickmorales.dev",
   "dependencies": {
     "@material-ui/core": "^4.9.2",
     "@material-ui/icons": "^4.9.1",
