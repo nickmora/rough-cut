@@ -1,9 +1,14 @@
 import React from 'react';
-import { Typography, Paper, TextField, Button, Grid } from "@material-ui/core";
+import { Typography, Paper, TextField, Button, Grid} from "@material-ui/core";
+import ConfirmDialog from "./ConfirmDialog"
 import emailjs from "emailjs-com";
+import ResumeDownloadButton from './ResumeDownloadButton';
 
 const Contact = () => {
     const [inputText, setInputText] = React.useState({first_name:"",last_name:"",phone_number:"",body:"", email: ""});
+    const [dialogOpen, setDialogOpen] = React.useState(false);
+    const handleClickOpen = ()=> setDialogOpen(true);
+    const handleClose = ()=> setDialogOpen(false);
     const handleInput = e => {
         setInputText({...inputText, [e.target.name]:e.target.value})
     }
@@ -15,7 +20,11 @@ const Contact = () => {
         // }
 
         emailjs.sendForm("gmail", "template_uASDyZfg_clone", e.target, process.env.REACT_APP_EMAILJS_USER_ID)
-            .then(result => console.log(result.text), error => console.log(error.text))
+            .then(result => {
+                console.log(result.text);
+                setInputText({first_name:"",last_name:"",phone_number:"",body:"",email:""})
+                handleClickOpen();
+                }, error => console.log(error.text))
 
     }
     return (
@@ -109,6 +118,8 @@ const Contact = () => {
                     </Grid>
                 </form>
             </Paper>
+            <ResumeDownloadButton />
+            <ConfirmDialog open = {dialogOpen} handleClose = {handleClose} />
         </div>
     );
 }
