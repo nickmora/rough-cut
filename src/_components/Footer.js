@@ -8,7 +8,6 @@ const Footer = () => {
     // const theme = useTheme();
     const classes = mainStyle();
     return (
-        console.log(classes),
         <footer className = {classes.Footer}>
             <Typography
                 variant = "body2"

@@ -21,6 +21,11 @@ const useStyles = makeStyles(theme => ({
             maxWidth: 100,
             margin: theme.spacing(1)
         }
+    },
+    Contact:{
+        "& .lineBreak":{
+            marginBottom: theme.spacing(7)
+        }
     }
 }))
 

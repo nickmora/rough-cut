@@ -2,14 +2,17 @@ import React from 'react';
 import { Typography, Paper, TextField, Button, Grid} from "@material-ui/core";
 import ConfirmDialog from "./ConfirmDialog"
 import emailjs from "emailjs-com";
-import ResumeDownloadButton from './ResumeDownloadButton';
+// import ResumeDownloadButton from './ResumeDownloadButton';
+import mainStyle from "../_styles/mainStyle";
 
 const Contact = () => {
+    const classes = mainStyle();
     const [inputText, setInputText] = React.useState({first_name:"",last_name:"",phone_number:"",body:"", email: ""});
     const [dialogOpen, setDialogOpen] = React.useState(false);
     const handleClickOpen = ()=> setDialogOpen(true);
     const handleClose = ()=> setDialogOpen(false);
     const handleInput = e => {
+        console.log(e)
         setInputText({...inputText, [e.target.name]:e.target.value})
     }
     const sendEmail = e => {
@@ -28,14 +31,19 @@ const Contact = () => {
 
     }
     return (
-        <div>
+        <div className = {classes.Contact}>
             <Paper className="card">
                 <Typography
                     variant="h2"
-                    gutterBottom
                 >
                     Get in Touch
-                    </Typography>
+                </Typography>
+                <Typography
+                    variant = "body1"
+                    className = "lineBreak"
+                >
+                    Fill out the form below for inquiries about freelancing, opportunities for collaboration, or just to say hi :-)
+                </Typography>
                 <form onSubmit={sendEmail}>
                     <Grid container spacing={3}>
                         <Grid item xs = {6}>
@@ -118,7 +126,7 @@ const Contact = () => {
                     </Grid>
                 </form>
             </Paper>
-            <ResumeDownloadButton />
+            {/* <ResumeDownloadButton /> */}
             <ConfirmDialog open = {dialogOpen} handleClose = {handleClose} />
         </div>
     );
