@@ -29,7 +29,7 @@ const Banner = () => {
                             </IconButton>
                         </Grid>
                         <Grid item xs={4}>
-                            <IconButton>
+                            <IconButton onClick = {()=> window.location.href = "#Contact"}>
                                 <Mail />
                             </IconButton>
                         </Grid>

@@ -31,7 +31,7 @@ const Contact = () => {
 
     }
     return (
-        <div className = {classes.Contact}>
+        <div className = {classes.Contact} id = "Contact">
             <Paper className="card">
                 <Typography
                     variant="h2"
