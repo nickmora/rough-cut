@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.6c074c0e.chunk.js",
-    "main.js.map": "/static/js/main.6c074c0e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2b9c1cb1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2b9c1cb1.js.map",
-    "static/js/2.a99c6702.chunk.js": "/static/js/2.a99c6702.chunk.js",
-    "static/js/2.a99c6702.chunk.js.map": "/static/js/2.a99c6702.chunk.js.map",
+    "main.js": "/static/js/main.b18439d5.chunk.js",
+    "main.js.map": "/static/js/main.b18439d5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b617138c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b617138c.js.map",
+    "static/js/2.206ec346.chunk.js": "/static/js/2.206ec346.chunk.js",
+    "static/js/2.206ec346.chunk.js.map": "/static/js/2.206ec346.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.adc676e35385596cb5a0b5ab71532e2c.js": "/precache-manifest.adc676e35385596cb5a0b5ab71532e2c.js",
+    "precache-manifest.dec10557007dd6ad1a998eb6a0f18aab.js": "/precache-manifest.dec10557007dd6ad1a998eb6a0f18aab.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.a99c6702.chunk.js.LICENSE.txt": "/static/js/2.a99c6702.chunk.js.LICENSE.txt",
+    "static/js/2.206ec346.chunk.js.LICENSE.txt": "/static/js/2.206ec346.chunk.js.LICENSE.txt",
     "static/media/bojack.jpg": "/static/media/bojack.3730a022.jpg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.67cb4bac.svg",
     "static/media/clyffstill.jpg": "/static/media/clyffstill.628a53b0.jpg",
     "static/media/css3.svg": "/static/media/css3.0a9363e0.svg",
+    "static/media/dogGenerator.jpg": "/static/media/dogGenerator.a7b07e45.jpg",
     "static/media/express.svg": "/static/media/express.9240c272.svg",
     "static/media/html5.svg": "/static/media/html5.676e8188.svg",
     "static/media/javascript.svg": "/static/media/javascript.61ed8b05.svg",
+    "static/media/jobscrybe.jpg": "/static/media/jobscrybe.6c7b21cc.jpg",
     "static/media/materialUI.svg": "/static/media/materialUI.cd849ab9.svg",
     "static/media/mongodb.svg": "/static/media/mongodb.80e39c1e.svg",
     "static/media/mysql.svg": "/static/media/mysql.f80a91ba.svg",
@@ -29,9 +31,9 @@
     "static/media/todolist.png": "/static/media/todolist.eab8b4b0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2b9c1cb1.js",
-    "static/js/2.a99c6702.chunk.js",
+    "static/js/runtime-main.b617138c.js",
+    "static/js/2.206ec346.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.6c074c0e.chunk.js"
+    "static/js/main.b18439d5.chunk.js"
   ]
 }
