@@ -9,7 +9,11 @@ import reduxIcon from "../images/logos/redux.svg"
 import mongodbIcon from "../images/logos/mongodb.svg"
 import nodeIcon from "../images/logos/node.svg"
 import mysqlIcon from "../images/logos/mysql.svg"
-import html5Icon from "../images/logos/html5.svg"
+import html5Icon from "../images/logos/html5.svg";
+import djangoIcon from "../images/logos/django.svg";
+import flaskIcon from "../images/logos/flask.svg";
+import postgreSQLIcon from "../images/logos/postgreSQL.svg";
+import pythonIcon from "../images/logos/python.svg";
 import { Grid, Card, CardContent, Typography } from "@material-ui/core";
 import mainStyle from "../_styles/mainStyle"
 
@@ -28,7 +32,7 @@ const TechStack = () => {
                         </Typography>
                     <Grid container justify="center">
 
-                        <Grid item xs={6}>
+                        <Grid item xs={5}>
                             <Typography
                                 variant="h5"
                                 gutterBottom
@@ -43,7 +47,7 @@ const TechStack = () => {
                             <img src={reduxIcon} alt="redux" />
                             <img src={materialUIIcon} alt="materialUI" />
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={7}>
                             <Typography
                                 variant="h5"
                                 gutterBottom
@@ -54,6 +58,10 @@ const TechStack = () => {
                             <img src={mongodbIcon} alt="mongo" />
                             <img src={mysqlIcon} alt="mysql" />
                             <img src={nodeIcon} alt="node" />
+                            <img src={pythonIcon} alt="node" />
+                            <img src={djangoIcon} alt="node" />
+                            <img src={postgreSQLIcon} alt="node" />
+                            <img src={flaskIcon} alt="node" />
                         </Grid>
                     </Grid>
                 </CardContent>

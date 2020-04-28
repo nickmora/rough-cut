@@ -1,0 +1,10 @@
+import bootstrapIcon from "./bootstrap.svg";
+import cssIcon from "./css3.svg";
+import djangoIcon from "./django.svg";
+import expressIcon from "./express.svg";
+import flaskIcon from "./flask.svg";
+import htmlIcon from "./html5.svg";
+import javascriptIcon from "./javascript.svg";
+import materialUIIcon from "./materialUI.svg";
+import mongodbIcon from "./mongodb.svg";
+// import mongodbIcon from "./mongodb.svg";
